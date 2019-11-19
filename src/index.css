@@ -1,5 +1,8 @@
-body {
+*, body {
   margin: 0;
+  padding: 0;
+  font-size: 10px;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -7,7 +10,160 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  background-color: #ddd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  background-color: purple;
+}
+
+.header-nav {
+  width: 70%;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: purple;
+}
+
+.header-nav .brand-logo {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.brand-logo h3 {
+  font-size: 3rem;
+  line-height: 2rem;
+  letter-spacing: .2rem;
+  font-family: 'Lobster', cursive;
+}
+
+.movie-search {
+  margin: 0 1rem;
+  padding: 1rem;
+  border: none;
+  border-bottom: .1rem solid #ccc;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  transition: all .4s ease-in;
+}
+
+.movie-search:focus {
+  outline: none;
+  border-bottom: .1rem solid aqua;
+}
+
+label[for='title'] {
+  display: none;
+}
+
+.fa-search {
+  position: relative;
+  left: -15%;
+  color: #aaa;
+  font-size: 1.2rem;
+}
+
+.result {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.4rem;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  border: thin solid #555;
+  height: 30rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 20rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.movie-title {
+  font-size: 2rem;
+  color: teal;
+  height: 20%;
+}
+
+.movie-top {
+  height: 90%;
+}
+
+.movie-type, .no-poster {
+  color: #777;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.movie-type {
+  position: relative;
+  bottom: .5rem;
+}
+
+.no-poster {
+  position: relative;
+  top: 50%;
+}
+
+.movie-details {
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.card-cover {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.9);
+  border-radius: 1rem;
+}
+
+.details {
+  padding: 1rem;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: .1rem;
+  line-height: 3rem;
+}
+
+.text {
+  font-size: 1.4rem;
+}
+
+.plot {
+  color: aqua;
 }
