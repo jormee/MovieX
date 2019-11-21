@@ -44,8 +44,13 @@ a {
   font-family: 'Lobster', cursive;
 }
 
+.search {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .movie-search {
-  margin: 0 1rem;
+  margin: 2rem 0;
   padding: 1rem;
   border: none;
   border-bottom: .1rem solid #ccc;
@@ -65,8 +70,6 @@ label[for='title'] {
 }
 
 .fa-search {
-  position: relative;
-  left: -15%;
   color: #aaa;
   font-size: 1.2rem;
 }
