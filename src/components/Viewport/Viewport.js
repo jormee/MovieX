@@ -32,7 +32,7 @@ const Viewport = () => {
                   </div>
                 )
               }) 
-              : <h3>Welcome to MovieX, Enter the title of the movie you would like to review in the search box.</h3>
+              : <h3 className="text">Welcome to MovieX, Enter the title of the movie you would like to review in the search box.</h3>
             }
           </div>
         </div>

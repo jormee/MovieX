@@ -1,9 +1,8 @@
-import React, { useContext } from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react';
 
 const MovieCard = ({ movie, getMovieDetails }) => {
 
-  const { Poster, Title, Type, Year, imdbID } = movie;
+  const { Poster, Title, Type, Year } = movie;
 
   return(
     <div className='movie-card front' onClick={(event) => getMovieDetails(movie.imdbID)}>
