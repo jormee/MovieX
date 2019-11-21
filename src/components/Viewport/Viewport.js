@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 
 import { MovieContext } from '../../contexts/MovieContext';
+
 import MovieCard from './MovieCard';
 import MovieDetails from './MovieDetails';
 import Searchbox from './Searchbox';
@@ -9,9 +10,9 @@ const Viewport = () => {
   const { movies, movieDetails, getMovieDetails } = useContext(MovieContext);
 
   return(
-    <div className='view-port'>
+    <div>
       <div className='cover'>
-        <div className="result">
+        <div className="result" autoFocus="on">
           {movieDetails.Title && <MovieDetails />}
         </div>
         <div className='container'>
