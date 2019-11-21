@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-size: 10px;
+  color: #ddd;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -11,7 +12,7 @@
 }
 
 body {
-  background-color: #ddd;
+  background: linear-gradient(35deg, rgb(199, 146, 199), rgb(151, 60, 128));
 }
 
 a {
@@ -32,9 +33,8 @@ a {
   background-color: purple;
 }
 
-.header-nav .brand-logo {
+.brand-logo {
   color: #ccc;
-  text-decoration: none;
 }
 
 .brand-logo h3 {
@@ -71,6 +71,13 @@ label[for='title'] {
   font-size: 1.2rem;
 }
 
+.cover {
+  background-color: rgba(0,0,0,.5);
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
 .result {
   width: 70%;
   margin: 0 auto;
@@ -88,6 +95,19 @@ ul li {
   padding: 1rem;
 }
 
+@media screen and (max-width: 750px){
+  .container, .header-nav {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .container, .header-nav {
+    width: 90%;
+  }
+}
+
+
 .grid-container {
   display: grid;
   grid-gap: 2rem;
@@ -99,6 +119,7 @@ ul li {
   flex-direction: column;
   border-radius: 1rem;
   border: thin solid #555;
+  min-width: 25rem;
   height: 30rem;
   overflow: hidden;
   text-align: center;
@@ -160,10 +181,12 @@ ul li {
   line-height: 3rem;
 }
 
-.text {
-  font-size: 1.4rem;
+.plot {
+  font-size: 1.5rem;
+  color: aqua;
+  margin: 2rem 0;
 }
 
-.plot {
-  color: aqua;
+.text {
+  font-size: 1.2rem;
 }
